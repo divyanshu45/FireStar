@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/hotstar"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_baseline_edit_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:padding="14dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_goToSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have account? Sign Up"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
